@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Recursion Tests",
+      "setup": "curl \"https://www.cis.gvsu.edu/~kurmasz/Autograder/autogradeNcK.tar.bz2\" | tar xvj",
+      "run": "java -jar munit.jar nCk.asm NcKTest_Strong.class",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
