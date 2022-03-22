@@ -11,6 +11,10 @@
         name: Autograding Selection Sort
         runs-on: ubuntu-latest
         steps:
+        - uses: actions/setup-java@v2
+          with:
+            distribution: 'temurin' # See 'Supported distributions' for available options
+            java-version: '15'
           - uses: actions/checkout@v2
           - run: curl https://www.cis.gvsu.edu/~kurmasz/Autograder/autogradeNcK.tar.bz2 | tar xvj
           - run: java -jar munit.jar selection_sort.asm SelectionSortTest_Strong.class
