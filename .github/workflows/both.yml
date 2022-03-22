@@ -12,5 +12,5 @@
         runs-on: ubuntu-latest
         steps:
           - uses: actions/checkout@v2
-           - run: curl https://www.cis.gvsu.edu/~kurmasz/Autograder/autogradeNcK.tar.bz2 | tar xvj
+          - run: curl https://www.cis.gvsu.edu/~kurmasz/Autograder/autogradeNcK.tar.bz2 | tar xvj
           - run: java -jar munit.jar selection_sort.asm SelectionSortTest_Strong.class && java -jar munit.jar nCk.asm NcKTest_Strong.class
