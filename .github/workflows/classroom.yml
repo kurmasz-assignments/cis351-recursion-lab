@@ -1,10 +1,10 @@
-    name: GitHub Classroom Workflow
+    name: NcK Workflow
 
     on:
       workflow_dispatch:
       push:
         tags:
-          - checkMe*
+          - checkMeNcK*
 
     jobs:
       build:
